@@ -14,7 +14,7 @@
 
 /* CORREZZIONE: Non é scorretto dare queste misure al body ma dipende molto da come saranno impaginate tutte le pagine secondarie. Utile é anche creare una classe .container al quale dare le misure da poi conservare nelle utility come classe ricorrente. */
 body {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   min-width: 600px;
   max-width: 1000px;
@@ -26,6 +26,11 @@ body {
   float: left;
   background-color: #A2D0EA;
   height: 400px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
 }
 
 /* CORREZZIONE: Visto che la misura margin-bottom ricorre moltissimo possimao creare una classe da inserire all'interno dell utility, da poter utilizzare spesso. */
@@ -45,6 +50,7 @@ header .banner{
 
 nav ul li{
   list-style: none;
+  margin-top: 5px;
 }
 
 ul li a{
@@ -57,8 +63,22 @@ ul li a{
 
 header .jumbotron {
   width: 100%;
-  height: 300px;
+  height: 350px;
   background-image: url(./assets/img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.jumbotron div {
+  padding-top: 20%;
+  padding-left: 30px;
+  color: white;
+}
+.overlay h3, .overlay p{
+  width: 70%;
 }
 
 
@@ -72,6 +92,7 @@ main div.top-ban {
   height: 70px;
   background-color: #A2D0EA;
 }
+
 
 section.col {
   width: 24%;
