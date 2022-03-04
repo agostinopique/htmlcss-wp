@@ -75,11 +75,17 @@ header .jumbotron {
 .jumbotron div {
   padding-top: 20%;
   padding-left: 30px;
-  color: white;
+  color: #FEF9FA;
 }
-.overlay h3, .overlay p{
+
+.overlay p{
   width: 70%;
   text-align: justify;
+  font-family: font-family: 'Montserrat', sans-serif;
+}
+
+.sub-title {
+  font-size: 1.5rem;
 }
 
 
