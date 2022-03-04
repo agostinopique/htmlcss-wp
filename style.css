@@ -1,0 +1,97 @@
+/* GENERALE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* CORREZZIONE: Non é scorretto dare queste misure al body ma dipende molto da come saranno impaginate tutte le pagine secondarie. Utile é anche creare una classe .container al quale dare le misure da poi conservare nelle utility come classe ricorrente. */
+body {
+  width: 70%;
+  margin: 0 auto;
+  min-width: 600px;
+  max-width: 1000px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16;
+}
+
+.col, .center {
+  float: left;
+  background-color: #A2D0EA;
+  height: 400px;
+}
+
+/* CORREZZIONE: Visto che la misura margin-bottom ricorre moltissimo possimao creare una classe da inserire all'interno dell utility, da poter utilizzare spesso. */
+.mb-15{
+  margin-bottom: 15px;
+}
+/* HEADER */
+
+header .banner{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.banner img {
+  width: 15%;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+ul li a{
+  display: inline-block;
+  float: left;
+  margin: 5px;
+  text-decoration: none;
+  color: #878787;
+}
+
+header .jumbotron {
+  width: 100%;
+  height: 300px;
+  background-image: url(./assets/img/banner.jpg);
+}
+
+
+/* MAIN */
+main {
+  height: 500px;
+  background-color: #0085FF;
+}
+
+main div.top-ban {
+  height: 70px;
+  background-color: #A2D0EA;
+}
+
+section.col {
+  width: 24%;
+}
+
+section.center {
+  width: 50%;
+}
+
+[class$="sx"]{
+  margin-right: 1%;
+}
+
+[class$="dx"] {
+  margin-left: 1%;
+}
+
+/* FOOTER */
+
+.credits {
+  height: 30px;
+  background-color: #971AFF;
+}
