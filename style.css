@@ -11,8 +11,6 @@
   clear: both;
 }
 
-
-/* CORREZZIONE: Non é scorretto dare queste misure al body ma dipende molto da come saranno impaginate tutte le pagine secondarie. Utile é anche creare una classe .container al quale dare le misure da poi conservare nelle utility come classe ricorrente. */
 body {
   width: 80%;
   margin: 0 auto;
@@ -22,7 +20,7 @@ body {
   font-size: 16;
 }
 
-.col, .center {
+.col, .center-col {
   float: left;
   color: #B1B1B1;
 
@@ -33,7 +31,6 @@ body {
   height: 100%;
 }
 
-/* CORREZZIONE: Visto che la misura margin-bottom ricorre moltissimo possimao creare una classe da inserire all'interno dell utility, da poter utilizzare spesso. */
 .mb-15{
   margin-bottom: 35px;
 }
@@ -72,31 +69,29 @@ header .jumbotron {
   overflow: hidden;
 }
 
-.jumbotron div {
+.jumbotron .jumbo-text {
   padding-top: 20%;
   padding-left: 30px;
   color: #FEF9FA;
 }
 
-.overlay p{
+.jumbo-text p{
   width: 70%;
   text-align: justify;
   font-family: font-family: 'Montserrat', sans-serif;
 }
 
-.sub-title {
+.jumbo-text .sub-title {
   font-size: 1.5rem;
 }
 
 
 /* MAIN */
-main {
-  /* height: 500px; */
-}
 
 .top-ban h1 {
   font-family: font-family: 'Montserrat', sans-serif;
 }
+
 .top-ban p{
   color: #B1B1B1;
 }
@@ -105,7 +100,7 @@ section.col {
   width: 23%;
 }
 
-section.center {
+section.center-col {
   width: 50%;
 }
 
@@ -131,7 +126,7 @@ section.center {
   background-image: url(./assets/img/img-1.jpg);
 }
 
-.center .cntr-img {
+.center-col .cntr-img {
   background-image: url(./assets/img/banner-2.jpg);
 }
 
@@ -143,7 +138,6 @@ section h5 {
   font-size: large;
   margin: 10px 0;
 }
-
 /* FOOTER */
 
 .credits {
