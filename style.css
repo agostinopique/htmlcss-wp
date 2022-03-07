@@ -59,14 +59,15 @@ ul li a{
   color: #878787;
 }
 
-/* CORREZZINE: LE regole CSS comuni a tutte le immagini (angoli arrotondati, background-size & position) potevano essere radunate in un'unica classe CSS comune a tutte */
+/* CORREZZIONE: LE regole CSS comuni a tutte le immagini (angoli arrotondati, background-size & position) potevano essere radunate in un'unica classe CSS comune a tutte */
+
 header .jumbotron {
   width: 100%;
   height: 350px;
   background-image: url(./assets/img/banner.jpg);
   background-position: center;
   background-size: cover;
-  /* background-repeat: no-repeat; questa regola puó essere rimossa perché esclusa dalle due regole sopra. */
+  /* background-repeat: no-repeat; questa regola puó essere rimossa perché background-size é impostato come cover e quindi occupa tutto lo spazio disponibile. */
   border-radius: 10px;
   overflow: hidden;
 }
@@ -120,7 +121,7 @@ section.center-col {
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-  overflow: hidden;margin-bottom: 5px;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 
