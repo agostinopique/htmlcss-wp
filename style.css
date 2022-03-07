@@ -43,6 +43,8 @@ header .banner{
 
 .banner img {
   width: 15%;
+  border-right: 1px solid #9f9f9f;
+  padding-right: 20px;
 }
 
 nav ul li{
@@ -51,20 +53,20 @@ nav ul li{
 }
 
 ul li a{
-  display: inline-block;
   float: left;
   margin: 5px;
   text-decoration: none;
   color: #878787;
 }
 
+/* CORREZZINE: LE regole CSS comuni a tutte le immagini (angoli arrotondati, background-size & position) potevano essere radunate in un'unica classe CSS comune a tutte */
 header .jumbotron {
   width: 100%;
   height: 350px;
   background-image: url(./assets/img/banner.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; questa regola puó essere rimossa perché esclusa dalle due regole sopra. */
   border-radius: 10px;
   overflow: hidden;
 }
@@ -78,7 +80,7 @@ header .jumbotron {
 .jumbo-text p{
   width: 70%;
   text-align: justify;
-  font-family: font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .jumbo-text .sub-title {
@@ -89,7 +91,7 @@ header .jumbotron {
 /* MAIN */
 
 .top-ban h1 {
-  font-family: font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .top-ban p{
@@ -141,9 +143,9 @@ section h5 {
 /* FOOTER */
 
 .credits {
-  height: 30px;
   text-align: center;
   color: #B1B1B1;
+  margin-bottom: 5px;
 }
 
 .credits .heart::after {
